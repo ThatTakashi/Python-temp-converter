@@ -67,6 +67,8 @@ class Converter:
         else:
             self.temp_error.config(text="You are OK", fg="blue")
 
+            self.history_button.config(state=NORMAL)
+
     def to_celsius(self):
         self.check_temp(-459)
 
